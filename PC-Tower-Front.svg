@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg:svg
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100cm"
+	height="100cm"
+	viewBox="0 0 1000 1000"
+	version="1.1"
+	id="svg8"
+	sodipodi:docname="PC-Tower-Front.svg">
+	<svg:defs
+		id="defs2" />
+	<sodipodi:namedview
+		id="base"
+		pagecolor="#ffffff"
+		bordercolor="#666666"
+		borderopacity="1.0"
+		showgrid="false"
+		units="cm" />
+	<svg:metadata
+		id="metadata5">
+		<rdf:RDF>
+			<cc:Work
+				rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type
+					rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+				<dc:title />
+			</cc:Work>
+		</rdf:RDF>
+	</svg:metadata>
+	<svg:defs>
+		<svg:path
+			id='hexagon'
+			vector-effect='non-scaling-stroke'
+			stroke-width='1'
+			d='
+				M	-1		0
+				L	-0.5	0.866
+				L	0.5		0.866
+				L	1		0
+				L	0.5		-0.866
+				L	-0.5	-0.866
+				Z
+			'/>
+		<svg:g
+			id='honeycomb'>
+			<svg:use
+				xlink:href='#hex128'/>
+			<svg:use
+				xlink:href='#hex128'/>
+		</svg:g>
+		<svg:g
+			id='hex128'>
+			<svg:use
+				xlink:href='#hex64'/>
+			<svg:use
+				x="0"
+				y="20"
+				xlink:href='#hex64'/>
+			<svg:use
+				x="0"
+				y="10"
+				xlink:href='#hex64'/>
+		</svg:g>
+		<svg:g
+			id='hex64'>
+			<svg:use
+				xlink:href='#hex32'/>
+			<svg:use
+				x="16"
+				y="0"
+				xlink:href='#hex32'/>
+		</svg:g>
+		<svg:g
+			id='hex32'>
+			<svg:use
+				xlink:href='#hex16'/>
+			<svg:use
+				x="0"
+				y="5"
+				xlink:href='#hex16'/>
+		</svg:g>
+		<svg:g
+			id='hex16'>
+			<svg:use
+				xlink:href='#hex8'/>
+			<svg:use
+				x="8"
+				y="0"
+				xlink:href='#hex8'/>
+		</svg:g>
+		<svg:g
+			id='hex8'>
+			<svg:use
+				xlink:href='#hex4'/>
+			<svg:use
+				x="0"
+				y="2.5"
+				xlink:href='#hex4'/>
+		</svg:g>
+		<svg:g
+			id='hex4'>
+			<svg:use
+				xlink:href='#hex2'/>
+			<svg:use
+				x="2"
+				y="1.5"
+				xlink:href='#hex2'/>
+		</svg:g>
+		<svg:g
+			id='hex2'>
+			<svg:use
+				xlink:href='#hexagon'/>
+			<svg:use
+				x="4"
+				xlink:href='#hexagon'/>
+		</svg:g>
+		<svg:circle 
+			id="m4-loch"
+			cx="0"
+			cy="0" 
+			r="2.25" />
+		<svg:g 
+			id="m4-loch-reihe">
+			<svg:use 
+				xlink:href='#m4-loch' 
+				x='9'/>
+			<svg:use 
+				xlink:href='#m4-loch' 
+				x='209.25'/>
+		</svg:g>
+		<svg:circle 
+			id="m5-loch"
+			cx="0"
+			cy="0" 
+			r="2.75" />
+		<svg:g 
+			id="m5-loch-reihe">
+			<svg:use 
+				xlink:href='#m5-loch' 
+				x='9'/>
+			<svg:use 
+				xlink:href='#m5-loch' 
+				x='209.25'/>
+		</svg:g>
+		<svg:g
+			id="baseplate"
+			style="
+				fill:none;
+				stroke:#ff0000;
+				stroke-width:1;
+			">
+			<svg:rect
+				id="rect3721"
+				width="218.25"
+				height="397"
+				x="0"
+				y="4"
+				class="cut" />
+			<svg:use
+				xlink:href='#m4-loch-reihe'
+				y="40"
+			/> 
+			<svg:use
+				xlink:href='#m5-loch-reihe'
+				y="80"
+			/> 
+			<svg:use
+				xlink:href='#m4-loch-reihe'
+				y="220"
+			/> 
+			<svg:use
+				xlink:href='#m5-loch-reihe'
+				y="317"
+			/> 
+			<svg:use
+				xlink:href='#m4-loch-reihe'
+				y="337"
+			/> 
+			<svg:use
+				xlink:href='#m5-loch-reihe'
+				y="381.5"
+			/> 
+		</svg:g>
+		<svg:path
+			id='luefter-schacht'
+			d='
+				M 	40 		17.5
+				L 	40 		165
+				L 	178.25 	165
+				L	178.25	17.5
+				Z'/>
+	</svg:defs>
+	<svg:g
+		id="root"
+		style="
+			fill:none;
+			stroke:#ff0000;
+			stroke-width:1;
+		"
+		transform="scale(0.4 -0.4) translate(-300 -500)">
+		<svg:g 
+			id="layer1"
+			transform="translate(10 10)">
+			<svg:use
+				xlink:href='#baseplate'/>
+			<svg:use
+				xlink:href='#luefter-schacht'/>
+		</svg:g>
+		<svg:g 
+			id="layer2"
+			transform="translate(240 10)">
+			<svg:use
+				xlink:href='#baseplate'/>
+			<svg:use
+				xlink:href='#luefter-schacht'/>
+		</svg:g>
+		<svg:g 
+			id="root"
+			transform="translate(470 10)">
+			<svg:use
+				xlink:href='#baseplate'/>
+			<svg:use
+				xlink:href='#luefter-schacht'
+				style="stroke:#00aa00"/>
+			<svg:use
+				xlink:href='#honeycomb'
+				transform='translate(41.7 24.5) scale(4.5 4.5) '
+				/>
+		</svg:g>
+	</svg:g>
+</svg:svg>
+
+
