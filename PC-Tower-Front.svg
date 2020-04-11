@@ -5,16 +5,16 @@
 <svg
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns="http://www.w3.org/2000/svg"
-	width="100cm"
-	height="100cm"
-	viewBox="0 0 1000 1000"
+	width="667mm"
+	height="403mm"
+	viewBox="0 0 667 403"
 	version="1.1"
 	>
+<!-- width of a layer: 218.25 + 2 * 2 margin = 222.25 -->
 	<defs>
 		<path
 			id='hexagon'
 			vector-effect='non-scaling-stroke'
-			stroke-width='1'
 			transform="scale(0.9 0.9)"
 			d='
 				M	-1		0
@@ -131,15 +131,28 @@
 			style="
 				fill:none;
 				stroke:#ff0000;
-				stroke-width:1;
 			">
-			<rect
-				id="rect3721"
+			<!--rect
+				id="bounding-box"
+				stroke="green"
 				width="218.25"
 				height="397"
 				x="0"
 				y="4"
-				class="cut" />
+				class="cut" /-->
+			<path
+				d="
+					M	100		4
+					L	213.75	4
+					A	4.5	4.5	0	0	1	218.25	8.5
+					L	218.25 	396.5
+					A	4.5	4.5	0	0	1	213.75	401
+					L	4.5		401
+					A	4.5	4.5	0	0	1	0		396.5
+					L	0		8.5
+					A	4.5	4.5	0	0	1	4.5		4
+					Z
+				"/>
 			<use
 				xlink:href='#m4-loch-reihe'
 				y="40"
@@ -185,26 +198,22 @@
 				Z'/>
 		<path
 			id='switch'
-			transform='translate(8.5 0)'
+			transform='translate(8.2 0)'
 			d='
 				M	3	-4
-				L	11	-4
-				L	16 	-9
-				L	16	-19
-				L	18 	-19
-				L	18	-4
+				L	16	-4
 				L	16	-2
 				L	11	-2
 				L	11	2
-				L	16	2
-				L	16	4
+				L	21	2
+				L	21	4
 				L	11	4	
 				L	3	4
 				L	3	2.5
 				L	1.5	2.5
 				A	10	10	0	1	1	1.5	-2.5
 				L	3 	-2.5
-				L	3 	-4
+				Z	3 	-4
 			'/>
 	</defs>
 	<g
@@ -212,19 +221,19 @@
 		style="
 			fill:none;
 			stroke:#ff0000;
-			stroke-width:1;
+			stroke-width:0.25;
 		"
-		transform='scale(0.5 -0.5) translate(0 -500)'
+		transform='scale(1 1) translate(2 -2)'
 		>
 		<g 
 			id="layer1"
-			transform="translate(10 10)">
+			transform="translate(0 0)">
 			<text
 				transform='translate(165.5 391) scale(-1 -1)'
 				font-size='8'
 				fill='#333333'
 				stroke='none'>
-				Layer 1, mdf 3mm (backside)
+				Layer 1, mdf 3mm (rear)
 			</text>
 			<use
 				xlink:href='#baseplate'/>
@@ -235,25 +244,36 @@
 			<g
 				id='switches'>
 				<use
-					transform='translate(192 375) rotate(-45)'
+					transform='translate(192 385) rotate(-90)'
 					xlink:href='#switch'/>
 				<use
-					transform='translate(192 266) rotate(135)'
+					transform='translate(192 256) rotate(90)'
 					xlink:href='#switch'/>
+				<!--rect
+					style='stroke:green'
+					x='178'
+					y='339'
+					width='30'
+					height='28'
+					/-->
 			</g>
-
-			<rect
-				style='stroke:green'
-				x='178'
-				y='339'
-				width='30'
-				height='28'
-				/>
-
+			<path
+				d='
+					M 188 285
+					L 180 340
+					L 180 350
+					L 182 350
+					L 182 340
+					L 190 285
+				'/>
 			<circle
-				cx='185'
-				cy='350'
-				r='6'/>
+				cx='203'
+				cy='348'
+				r='3.2'/>
+			<circle
+				cx='189'
+				cy='348'
+				r='3.2'/>
 			<g
 				id='nieten'>
 				<defs>
@@ -299,14 +319,14 @@
 		</g>
 		<g 
 			id="layer2"
-			transform="translate(240 10)">
+			transform="translate(222.25)">
 			<g
 				font-size='8'
 				fill='#333333'
 				stroke='none'>
 				<text
 					transform='translate(165.5 391) scale(-1 -1)'>
-					Layer 2, mdf 5mm (backside)
+					Layer 2, mdf 5mm (rear)
 				</text>
 				<text
 					transform='translate(145.5 360) scale(-1 -1)'>
@@ -336,84 +356,167 @@
 				xlink:href='#baseplate'/>
 			<use
 				xlink:href='#luefter-schacht'/>
-			<use
+			<!--use
 				style="stroke:green"
-				xlink:href='#tray-schacht'/>
+				xlink:href='#tray-schacht'/-->
 			<use
 				xlink:href='#switches'/>
-			<path 
-				d="
-					M	14		200
-					L	122.5	200
-					A	9.75	9.75	0	1	1	122.5	224.5 
-					L	122.5	229.5
-					L	14		229.5
-					L 	14		210
-					A 	5		5		0	1	1	14		200
-				"/>
-			<path 
-				d="
-					M	122.5	229.5
-					A	7		7		0	1	1	122.5	243.5
-					L 	122.5	256
-					L 	14		256
-					L 	14		251
-					A	5		5		0	1	1	14		241
-					L	14		229.5
-				"/>
-			<path 
-				d="
-					M	122.5	256
-					L	138.4	256
-					L	138.4	253
-					A 	15		15		0	1	1	168.4 	253
-					L	168.4	299
-					L	14		299
-					L	14		282.5
-					A	5		5		0	1	1	14 		272.5
-					L	14		256
-				"/>
+			<circle
+				id='light-hole'
+				cx='192'
+				cy='299'
+				r='2.95'/>
 			<path
-				d="
-					M	168.4	299
-					L	168.4	332
-					A	5		5		0	1	1	168.4	342	
-					L	14		342
-					L	14		332
-					A	5		5		0	1	1	14		322
-					L	14		299
-				"/>
-			<path
-				d="
-					M	168.4	342
-					L	168.4	375
-					A	5		5		0	1	1	168.4	385	
-					L	168.4	388
-					L	14		388
-					L	14		368
-					A	5		5		0	1	1	14		358
-					L	14		342
-				"/>
+				d='
+					M 190.5	299
+					L 193.5	299
+					L 205	350
+					L 202	350
+					Z
+				'/>
+			<use
+				xlink:href='#light-hole'
+				y='43'/>
+			<rect
+				transform='translate(192 341.5) rotate(115) translate(0 -1.5)'
+				width='9'
+				height='3'/>
+			
+				
+			<g 
+				id="tray-lids">
+				<path 
+					d="
+						M	14		200
+						L	122.5	200
+						A	9.75	9.75	0	1	1	122.5	224.5 
+						L	122.5	229.5
+						L	14		229.5
+						L 	14		210
+						A 	5		5		0	1	1	14		200
+					"/>
+				<path 
+					d="
+						M	122.5	229.5
+						A	7		7		0	1	1	122.5	243.5
+						L 	122.5	256
+						L 	14		256
+						L 	14		251
+						A	5		5		0	1	1	14		241
+						L	14		229.5
+					"/>
+				<path 
+					d="
+						M	122.5	256
+						L	138.4	256
+						L	138.4	253
+						A 	15		15		0	1	1	168.4 	253
+						L	168.4	299
+						L	14		299
+						L	14		282.5
+						A	5		5		0	1	1	14 		272.5
+						L	14		256
+					"/>
+				<path
+					d="
+						M	168.4	299
+						L	168.4	332
+						A	5		5		0	1	1	168.4	342	
+						L	14		342
+						L	14		332
+						A	5		5		0	1	1	14		322
+						L	14		299
+					"/>
+				<path
+					d="
+						M	168.4	342
+						L	168.4	375
+						A	5		5		0	1	1	168.4	385	
+						L	168.4	388
+						L	14		388
+						L	14		368
+						A	5		5		0	1	1	14		358
+						L	14		342
+					"/>
+			</g>
 		</g>
 		<g 
-			id="root"
-			transform="translate(470 10)">
+			id="layer3"
+			transform="translate(444.5 0)">
+			<text
+				transform='translate(165.5 391) scale(-1 -1)'
+				font-size='8'
+				fill='#333333'
+				stroke='none'>
+				Layer 3, poplar 4mm (rear)
+			</text>
 			<use
 				xlink:href='#baseplate'/>
-			<use
-				xlink:href='#luefter-schacht'
-				style="stroke:green"/>
 			<use
 				xlink:href='#tray-schacht'/>
 			<use
 				xlink:href='#honeycomb'
 				transform='translate(41.7 24.5) scale(4.5 4.5) '
 				/>
-			<circle
-				r='10'
-				cx=''
-				cy=''
-				id='button'/>
+			<defs>
+				<path
+					id='ray'
+					d='
+						M	0		0	
+						L	2.5		0.5
+						L	5		0
+						L	2.5		-0.5
+						Z
+					'/>
+				<g
+					id='ray3'>
+					<use
+						transform='rotate(80)'
+						xlink:href='#ray'/>
+					<use
+						transform='rotate(40)'
+						xlink:href='#ray'/>
+					<use
+						xlink:href='#ray'/>
+				</g>
+				<g
+					id='ray9'>
+					<use
+						transform='rotate(240)'
+						xlink:href='#ray3'/>
+					<use
+						transform='rotate(120)'
+						xlink:href='#ray3'/>
+					<use
+						xlink:href='#ray3'/>
+				</g>
+				<g
+					id='diode'>
+					<circle
+						r='2.5'/>
+					<use
+						xlink:href='#ray9'/>
+				</g>
+			</defs>
+			
+			<use
+				xlink:href='#diode'
+				x='192'
+				y='299'
+				/>
+			<use
+				x='192'
+				y='342'
+				xlink:href='#diode'
+				/>
+			<circle 
+				cx='192'
+				cy='385'
+				r='10'/>
+			<circle 
+				cx='192'
+				cy='256'
+				r='10'/>
 		</g>
 	</g>
 
