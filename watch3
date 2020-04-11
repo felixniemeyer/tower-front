@@ -1,0 +1,3 @@
+chromium ./PC-Tower-Front.svg & 
+find * | entr ./reload-chrome-tab
+

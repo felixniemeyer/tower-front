@@ -1,0 +1,6 @@
+echo 'called refresh tab script'
+WID=`xdotool search --onlyvisible --name "Chromium" | head -1`
+PREVWID=`xdotool getwindowfocus`
+xdotool windowactivate $WID
+xdotool key F5
+xdotool windowactivate $PREVWID
