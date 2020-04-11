@@ -1,46 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-<svg:svg
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:cc="http://creativecommons.org/ns#"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:svg="http://www.w3.org/2000/svg"
-	xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+<svg
 	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns="http://www.w3.org/2000/svg"
 	width="100cm"
 	height="100cm"
 	viewBox="0 0 1000 1000"
 	version="1.1"
-	id="svg8"
-	sodipodi:docname="PC-Tower-Front.svg">
-	<svg:style type="text/css">
-		svg:text.comment {
-			fill: #333333;
-		}	
-	</svg:style>
-	<svg:defs
-		id="defs2" />
-	<sodipodi:namedview
-		id="base"
-		pagecolor="#ffffff"
-		bordercolor="#666666"
-		borderopacity="1.0"
-		showgrid="false"
-		units="cm" />
-	<svg:metadata
-		id="metadata5">
-		<rdf:RDF>
-			<cc:Work
-				rdf:about="">
-				<dc:format>image/svg+xml</dc:format>
-				<dc:type
-					rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-				<dc:title />
-			</cc:Work>
-		</rdf:RDF>
-	</svg:metadata>
-	<svg:defs>
-		<svg:path
+	>
+	<defs>
+		<path
 			id='hexagon'
 			vector-effect='non-scaling-stroke'
 			stroke-width='1'
@@ -54,147 +25,147 @@
 				L	-0.5	-0.866
 				Z
 			'/>
-		<svg:g
+		<g
 			id='honeycomb'>
-			<svg:use
+			<use
 				xlink:href='#hex128'/>
-			<svg:use
+			<use
 				xlink:href='#hex128'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id='hex128'>
-			<svg:use
+			<use
 				xlink:href='#hex64'/>
-			<svg:use
+			<use
 				x="0"
 				y="20"
 				xlink:href='#hex64'/>
-			<svg:use
+			<use
 				x="0"
 				y="10"
 				xlink:href='#hex64'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id='hex64'>
-			<svg:use
+			<use
 				xlink:href='#hex32'/>
-			<svg:use
+			<use
 				x="16"
 				y="0"
 				xlink:href='#hex32'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id='hex32'>
-			<svg:use
+			<use
 				xlink:href='#hex16'/>
-			<svg:use
+			<use
 				x="0"
 				y="5"
 				xlink:href='#hex16'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id='hex16'>
-			<svg:use
+			<use
 				xlink:href='#hex8'/>
-			<svg:use
+			<use
 				x="8"
 				y="0"
 				xlink:href='#hex8'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id='hex8'>
-			<svg:use
+			<use
 				xlink:href='#hex4'/>
-			<svg:use
+			<use
 				x="0"
 				y="2.5"
 				xlink:href='#hex4'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id='hex4'>
-			<svg:use
+			<use
 				xlink:href='#hex2'/>
-			<svg:use
+			<use
 				x="2"
 				y="1.5"
 				xlink:href='#hex2'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id='hex2'>
-			<svg:use
+			<use
 				xlink:href='#hexagon'/>
-			<svg:use
+			<use
 				x="4"
 				xlink:href='#hexagon'/>
-		</svg:g>
-		<svg:circle 
+		</g>
+		<circle 
 			id="m4-loch"
 			cx="0"
 			cy="0" 
 			r="2.25" />
-		<svg:g 
+		<g 
 			id="m4-loch-reihe">
-			<svg:use 
+			<use 
 				xlink:href='#m4-loch' 
 				x='9'/>
-			<svg:use 
+			<use 
 				xlink:href='#m4-loch' 
 				x='209.25'/>
-		</svg:g>
-		<svg:circle 
+		</g>
+		<circle 
 			id="m5-loch"
 			cx="0"
 			cy="0" 
 			r="2.75" />
-		<svg:g 
+		<g 
 			id="m5-loch-reihe">
-			<svg:use 
+			<use 
 				xlink:href='#m5-loch' 
 				x='9'/>
-			<svg:use 
+			<use 
 				xlink:href='#m5-loch' 
 				x='209.25'/>
-		</svg:g>
-		<svg:g
+		</g>
+		<g
 			id="baseplate"
 			style="
 				fill:none;
 				stroke:#ff0000;
 				stroke-width:1;
 			">
-			<svg:rect
+			<rect
 				id="rect3721"
 				width="218.25"
 				height="397"
 				x="0"
 				y="4"
 				class="cut" />
-			<svg:use
+			<use
 				xlink:href='#m4-loch-reihe'
 				y="40"
 			/> 
-			<svg:use
+			<use
 				xlink:href='#m5-loch-reihe'
 				y="80"
 			/> 
-			<svg:use
+			<use
 				xlink:href='#m4-loch-reihe'
 				y="220"
 			/> 
-			<svg:use
+			<use
 				xlink:href='#m5-loch-reihe'
 				y="317"
 			/> 
-			<svg:use
+			<use
 				xlink:href='#m4-loch-reihe'
 				y="337"
 			/> 
-			<svg:use
+			<use
 				xlink:href='#m5-loch-reihe'
 				y="381.5"
 			/> 
-		</svg:g>
-		<svg:path
+		</g>
+		<path
 			id='luefter-schacht'
 			d='
 				M 	40 		17.5
@@ -202,7 +173,7 @@
 				L 	178.25 	165
 				L	178.25	17.5
 				Z'/>
-		<svg:path
+		<path
 			id='tray-schacht'
 			d='
 				M 	17 		203
@@ -212,37 +183,167 @@
 				L	119.5	256
 				L	119.5	203
 				Z'/>
-	</svg:defs>
-	<svg:g
+		<path
+			id='switch'
+			transform='translate(8.5 0)'
+			d='
+				M	3	-4
+				L	11	-4
+				L	16 	-9
+				L	16	-19
+				L	18 	-19
+				L	18	-4
+				L	16	-2
+				L	11	-2
+				L	11	2
+				L	16	2
+				L	16	4
+				L	11	4	
+				L	3	4
+				L	3	2.5
+				L	1.5	2.5
+				A	10	10	0	1	1	1.5	-2.5
+				L	3 	-2.5
+				L	3 	-4
+			'/>
+	</defs>
+	<g
 		id="root"
 		style="
 			fill:none;
 			stroke:#ff0000;
 			stroke-width:1;
 		"
-		transform="scale(0.4 -0.4) translate(0 -500)">
-		<svg:g 
+		transform='scale(0.5 -0.5) translate(0 -500)'
+		>
+		<g 
 			id="layer1"
 			transform="translate(10 10)">
-			<svg:text transform='translate(0 0) scale(1 1)' class='comment'>Test</svg:text>
-			<svg:use
+			<text
+				transform='translate(165.5 390) scale(-1 -1)'
+				font-size='10'
+				fill='#333333'
+				stroke='none'>
+				Layer 1, mdf 3mm (backside)
+			</text>
+			<use
 				xlink:href='#baseplate'/>
-			<svg:use
+			<use
 				xlink:href='#luefter-schacht'/>
-			<svg:use
+			<use
 				xlink:href='#tray-schacht'/>
-		</svg:g>
-		<svg:g 
+			<g
+				id='switches'>
+				<use
+					transform='translate(192 375) rotate(-45)'
+					xlink:href='#switch'/>
+				<use
+					transform='translate(192 266) rotate(135)'
+					xlink:href='#switch'/>
+			</g>
+			<g
+				id='nieten'>
+				<defs>
+					<circle
+						id='niete'
+						cx='0'
+						cy='0' 
+						r='3.5'/>
+				</defs>
+				<use
+					x='10.75'
+					y='191'
+					xlink:href='#niete'/>
+				<use
+					x='9.75'
+					y='270'
+					xlink:href='#niete'/>
+				<use
+					x='10.25'
+					y='371'
+					xlink:href='#niete'/>
+				<use
+					x='208'
+					y='391'
+					xlink:href='#niete'/>
+				<use
+					x='208'
+					y='371'
+					xlink:href='#niete'/>
+				<use
+					x='172.5'
+					y='368.25'
+					xlink:href='#niete'/>
+				<use
+					x='172.5'
+					y='270'
+					xlink:href='#niete'/>
+				<use
+					x='125'
+					y='206.25'
+					xlink:href='#niete'/>
+			</g>
+		</g>
+		<g 
 			id="layer2"
 			transform="translate(240 10)">
-			<svg:use
+			<g>
+				<text
+					transform='translate(165.5 390) scale(-1 -1)'
+					font-size='10'
+					fill='#333333'
+					stroke='none'>
+					Layer 2, mdf 5mm (backside)
+				</text>
+				<text
+					transform='translate(145.5 360) scale(-1 -1)'
+					font-size='10'
+					fill='#333333'
+					stroke='none'>
+					3,5" tray I
+				</text>
+				<text
+					transform='translate(145.5 316) scale(-1 -1)'
+					font-size='10'
+					fill='#333333'
+					stroke='none'>
+					3,5" tray II
+				</text>
+				<text
+					transform='translate(145.5 272) scale(-1 -1)'
+					font-size='10'
+					fill='#333333'
+					stroke='none'>
+					3,5" tray III
+				</text>
+				<text
+					transform='translate(105 240) scale(-1 -1)'
+					font-size='10'
+					fill='#333333'
+					stroke='none'>
+					2,5" tray III
+				</text>
+				<text
+					transform='translate(105 211) scale(-1 -1)'
+					font-size='10'
+					fill='#333333'
+					stroke='none'>
+					2,5" tray III
+				</text>
+			</g>
+			<use 
+				transform='translate(192 375.5)'
+				xlink:href='#light'/>
+			<use
 				xlink:href='#baseplate'/>
-			<svg:use
+			<use
 				xlink:href='#luefter-schacht'/>
-			<svg:use
+			<use
 				style="stroke:green"
 				xlink:href='#tray-schacht'/>
-			<svg:path 
+			<use
+				xlink:href='#switches'/>
+			<path 
 				d="
 					M	14		200
 					L	122.5	200
@@ -252,7 +353,7 @@
 					L 	14		210
 					A 	5		5		0	1	1	14		200
 				"/>
-			<svg:path 
+			<path 
 				d="
 					M	122.5	229.5
 					A	7		7		0	1	1	122.5	243.5
@@ -262,7 +363,7 @@
 					A	5		5		0	1	1	14		241
 					L	14		229.5
 				"/>
-			<svg:path 
+			<path 
 				d="
 					M	122.5	256
 					L	138.4	256
@@ -274,7 +375,7 @@
 					A	5		5		0	1	1	14 		272.5
 					L	14		256
 				"/>
-			<svg:path
+			<path
 				d="
 					M	168.4	299
 					L	168.4	332
@@ -284,7 +385,7 @@
 					A	5		5		0	1	1	14		322
 					L	14		299
 				"/>
-			<svg:path
+			<path
 				d="
 					M	168.4	342
 					L	168.4	375
@@ -295,25 +396,25 @@
 					A	5		5		0	1	1	14		358
 					L	14		342
 				"/>
-		</svg:g>
-		<svg:g 
+		</g>
+		<g 
 			id="root"
 			transform="translate(470 10)">
-			<svg:use
+			<use
 				xlink:href='#baseplate'/>
-			<svg:use
+			<use
 				xlink:href='#luefter-schacht'
 				style="stroke:green"/>
-			<svg:use
+			<use
 				xlink:href='#tray-schacht'/>
-			<svg:use
+			<use
 				xlink:href='#honeycomb'
 				transform='translate(41.7 24.5) scale(4.5 4.5) '
 				/>
-		</svg:g>
-	</svg:g>
+		</g>
+	</g>
 
-</svg:svg>
+</svg>
 
 
 
